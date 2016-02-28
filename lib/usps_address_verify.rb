@@ -3,7 +3,7 @@ require 'httparty'
 require 'pp'
 
 # This class wraps the USPS Web Tools API
-class USPSAddressVeriify
+class USPSAddressVerify
   attr_accessor :user_id
 
   def initialize(user_id = nil)

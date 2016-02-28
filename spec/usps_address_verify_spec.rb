@@ -1,8 +1,14 @@
 require 'spec_helper'
 
-describe UspsAddressVerify do
-  it 'has a version number' do
-    expect(UspsAddressVerify::VERSION).not_to be nil
+describe USPSAddressVeriify do
+
+  before(:each) do
+    @address = {
+      address1: '2301 E 7th St',
+      address2: 'Ste E200',
+      city: 'Los Angeles',
+      state: 'CA'
+    }
   end
 
   it 'does something useful' do
